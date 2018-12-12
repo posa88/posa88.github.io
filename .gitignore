@@ -4,3 +4,5 @@
 
 # test files
 test/*
+
+.DS_Store
