@@ -1,0 +1,6 @@
+# idea auto-generated files
+.idea/
+*.iml
+
+# test files
+test/*
