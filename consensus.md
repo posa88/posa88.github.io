@@ -26,14 +26,19 @@ All non-faulty processes decide the same value(data consistency)
     
 ## Solutions?
     
-### Common fault tolerant (unreliable processors, no malicious processors)
-* Paxos
-* Raft
+Common fault tolerant (unreliable processors, no malicious processors)
+---
+1. Paxos
+1. Raft
 
-### Byzantine fault tolerance (Byzantine Generals' Problem, arbitrary failures)
+Byzantine fault tolerance (Byzantine Generals' Problem, arbitrary failures)
+---
+1. Byzantine Paxos
+1. Practical Byzantine Fault Tolerance Algorithm (PBFT) 
+1. Zyzzyva
+1. Aardvark
+1. RBFT
 
-* Byzantine Paxos
-* Practical Byzantine Fault Tolerance Algorithm (PBFT) 
 
 
 Proof Of Work
@@ -49,3 +54,17 @@ Proof Of Stake
 1. [Cardano Ouroborous](https://www.cardano.org/en/ouroboros/)
 1. [Algorand](https://eprint.iacr.org/2018/377)
 1. [Tendermint](https://tendermint.com/)
+
+Summary
+---
+
+|              | openness  | throughput | fault tolerance | Consumption | latency|
+|:-------------|:----------|:-----------|:----------------|:------------|:-------|
+| 2PC          | NO        |    Good
+| Paxos        | Bad       |    Good
+| Raft         | Bad       |    Good
+| PBFT         | Bad       |    Good
+| POW          | Good      |    Bad
+| POS          | Good      |    Bad
+| DPOS         | Medium    |    Medium
+| Ouroborous   | Good      |    Medium
